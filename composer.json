@@ -1,0 +1,38 @@
+{
+    "name": "kopling/framework",
+    "description": "The Laravel community building framework",
+    "minimum-stability": "stable",
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "homepage": "https://luceos.com"
+        }
+    ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/luceos"
+        }
+    ],
+    "require": {
+        "laravel/framework": "12.*",
+        "filament/filament": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kopling\\": "src"
+        }
+    },
+    "replace": {
+        "kopling/core": "self.version",
+        "kopling/attachments": "self.version",
+        "kopling/categories": "self.version",
+        "kopling/notifications": "self.version",
+        "kopling/payments": "self.version",
+        "kopling/polls": "self.version",
+        "kopling/privacy": "self.version",
+        "kopling/seo": "self.version",
+        "kopling/tasks": "self.version"
+    }
+}
