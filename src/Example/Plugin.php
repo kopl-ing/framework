@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Kopling\Example;
 
-use Kopling\Core\Attributes\OrderPlugin;
 use Kopling\Core\Plugins\AbstractPlugin;
+use Kopling\Core\Plugins\Attributes\OrderPlugin;
 use Kopling\Polls\Plugin as Polls;
 
 #[OrderPlugin(before: Polls::class)]

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kopling\Core\Attributes;
+namespace Kopling\Core\Plugins\Attributes;
 
 use Attribute;
 use Kopling\Core\Plugins\AbstractPlugin;

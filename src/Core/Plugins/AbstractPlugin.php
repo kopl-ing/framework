@@ -9,5 +9,7 @@ use Filament\Support\Contracts\HasLabel;
 
 abstract class AbstractPlugin implements HasLabel, HasIcon
 {
-
+    abstract public function getLabel(): ?string;
+    abstract public function getIcon(): ?string;
+    abstract public function interactions(): ?array;
 }

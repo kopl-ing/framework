@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kopling\Core\Plugins;
+namespace Kopling\Core\Plugins\Concerns;
 
 use Kopling\Core\Interactions\AbstractInteraction;
 
-class SingleInteractionPlugin extends AbstractPlugin
+trait ProvidesSingleInteraction
 {
     protected string $interaction;
 
