@@ -4,17 +4,9 @@ declare(strict_types=1);
 
 namespace Kopling\Discussions;
 
-use Kopling\Core\Interactions\AbstractInteraction;
+use Illuminate\Database\Eloquent\Model;
 
-class Discussion extends AbstractInteraction
+class Discussion extends Model
 {
-    public function getIcon(): ?string
-    {
-        // TODO: Implement getIcon() method.
-    }
 
-    public function getLabel(): ?string
-    {
-        return 'Discussions';
-    }
 }

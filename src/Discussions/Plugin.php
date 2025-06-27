@@ -8,5 +8,5 @@ use Kopling\Core\Plugins\SingleInteractionPlugin;
 
 class Plugin extends SingleInteractionPlugin
 {
-    protected string $interaction = Discussion::class;
+    protected string $interaction = Interaction::class;
 }

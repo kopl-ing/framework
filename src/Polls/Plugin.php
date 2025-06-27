@@ -11,5 +11,5 @@ use Kopling\Discussions\Plugin as Discussions;
 #[OrderPlugin(after: Discussions::class)]
 class Plugin extends SingleInteractionPlugin
 {
-    protected string $interaction = Poll::class;
+    protected string $interaction = Interaction::class;
 }

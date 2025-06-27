@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kopling\Polls;
+namespace Kopling\Discussions;
 
 use Kopling\Core\Interactions\AbstractInteraction;
 
-class Poll extends AbstractInteraction
+class Interaction extends AbstractInteraction
 {
     public function getIcon(): ?string
     {
@@ -15,6 +15,11 @@ class Poll extends AbstractInteraction
 
     public function getLabel(): ?string
     {
-        return 'Polls';
+        return 'Discussions';
+    }
+
+    public function filamentResource(): ?string
+    {
+        return DiscussionResource::class;
     }
 }

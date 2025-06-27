@@ -27,8 +27,8 @@ class Plugin extends AbstractPlugin
 //            MyInteraction::class, // this is identical to:
 //            MyInteraction::class => Change::append,
             // Remove interactions
-//            Discussion::class => Change::remove,
-//            Discussion::class => fn () => Change::remove,
+//            Interaction::class => Change::remove,
+//            Interaction::class => fn () => Change::remove,
         ];
     }
 }

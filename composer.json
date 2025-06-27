@@ -1,6 +1,13 @@
 {
     "name": "kopling/framework",
     "description": "The flexible community building framework",
+    "homepage": "https://kopl.ing",
+    "support": {
+        "source": "https://github.com/kopl-ing/framework",
+        "issues": "https://github.com/kopl-ing/framework/issues",
+        "docs": "https://kopl.ing/docs",
+        "forum": "https://kopl.ing/community"
+    },
     "minimum-stability": "stable",
     "license": "AGPL-3.0-or-later",
     "authors": [
@@ -28,6 +35,7 @@
         "kopling/core": "self.version",
         "kopling/attachments": "self.version",
         "kopling/categories": "self.version",
+        "kopling/example": "self.version",
         "kopling/lang-english": "self.version",
         "kopling/notifications": "self.version",
         "kopling/payments": "self.version",
@@ -35,5 +43,12 @@
         "kopling/privacy": "self.version",
         "kopling/seo": "self.version",
         "kopling/tasks": "self.version"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kopling\\Core\\Provider"
+            ]
+        }
     }
 }
