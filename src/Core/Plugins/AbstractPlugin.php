@@ -10,8 +10,4 @@ use Filament\Support\Contracts\HasLabel;
 abstract class AbstractPlugin implements HasLabel, HasIcon
 {
 
-    public function interactions(): array
-    {
-        return [];
-    }
 }

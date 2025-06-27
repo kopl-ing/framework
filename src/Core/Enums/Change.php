@@ -9,4 +9,5 @@ enum Change
     case append;
     case prepend;
     case replace;
+    case remove;
 }

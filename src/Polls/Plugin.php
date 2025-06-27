@@ -5,25 +5,11 @@ declare(strict_types=1);
 namespace Kopling\Polls;
 
 use Kopling\Core\Attributes\OrderPlugin;
-use Kopling\Core\Plugins\AbstractPlugin;
+use Kopling\Core\Plugins\SingleInteractionPlugin;
+use Kopling\Discussions\Plugin as Discussions;
 
-#[OrderPlugin(before: Plugin::class)]
-class Plugin extends AbstractPlugin
+#[OrderPlugin(after: Discussions::class)]
+class Plugin extends SingleInteractionPlugin
 {
-    public function getIcon(): ?string
-    {
-        // TODO: Implement getIcon() method.
-    }
-
-    public function getLabel(): ?string
-    {
-        return 'Polls';
-    }
-
-    public function interactions(): array
-    {
-        return [
-            Poll::class
-        ];
-    }
+    protected string $interaction = Poll::class;
 }

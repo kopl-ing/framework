@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kopling\Core\Interactions;
+namespace Kopling\Discussions;
+
+use Kopling\Core\Interactions\AbstractInteraction;
 
 class Discussion extends AbstractInteraction
 {

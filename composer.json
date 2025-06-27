@@ -1,6 +1,6 @@
 {
     "name": "kopling/framework",
-    "description": "The Laravel community building framework",
+    "description": "The flexible community building framework",
     "minimum-stability": "stable",
     "license": "AGPL-3.0-or-later",
     "authors": [
@@ -28,6 +28,7 @@
         "kopling/core": "self.version",
         "kopling/attachments": "self.version",
         "kopling/categories": "self.version",
+        "kopling/lang-english": "self.version",
         "kopling/notifications": "self.version",
         "kopling/payments": "self.version",
         "kopling/polls": "self.version",
